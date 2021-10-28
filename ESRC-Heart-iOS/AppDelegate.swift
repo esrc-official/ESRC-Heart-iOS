@@ -2,7 +2,8 @@
 //  AppDelegate.swift
 //  ESRC-Heart-iOS
 //
-//  Created by Mac_Joseph on 2021/10/25.
+//  Created by Hyunwoo Lee on 25/10/2021.
+//  Copyright © 2021 ESRC. All rights reserved.
 //
 
 import UIKit
@@ -10,8 +11,8 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
