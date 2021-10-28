@@ -100,4 +100,4 @@ cd ESRC-Heart-iOS
 
 ## Reference
 
-For further detail on ESRC SDK for iOS, reter to [ESRC SDK for iOS README](https://github.com/esrc-official/ESRC-SDK-iOS/README.md).
+For further detail on ESRC Heart SDK for iOS, reter to [ESRC Heart SDK for iOS README](https://github.com/esrc-official/ESRC-Heart-SDK-iOS/README.md).
