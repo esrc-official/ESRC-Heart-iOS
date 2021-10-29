@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		4C31FCA6272A4D5C00654A66 /* ESRC_Heart_SDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C31FCA4272A4D5800654A66 /* ESRC_Heart_SDK_iOS.framework */; };
 		4C31FCA7272A4D5C00654A66 /* ESRC_Heart_SDK_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C31FCA4272A4D5800654A66 /* ESRC_Heart_SDK_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4C86BDFE272BA7ED000BC2C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C86BDFC272BA7ED000BC2C5 /* Main.storyboard */; };
+		4C86BE00272BA814000BC2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C86BDFF272BA814000BC2C5 /* Assets.xcassets */; };
 		4CD12CA5272694D2006AEBEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD12CA4272694D2006AEBEE /* AppDelegate.swift */; };
 		4CD12CA7272694D2006AEBEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD12CA6272694D2006AEBEE /* SceneDelegate.swift */; };
 		4CD12CA9272694D2006AEBEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD12CA8272694D2006AEBEE /* ViewController.swift */; };
-		4CD12CAE272694D3006AEBEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD12CAD272694D3006AEBEE /* Assets.xcassets */; };
 		4CD12CB1272694D3006AEBEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD12CAF272694D3006AEBEE /* LaunchScreen.storyboard */; };
 		4CD12CBD27269546006AEBEE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4CD12CBC27269546006AEBEE /* README.md */; };
 		4CD12CD3272696DF006AEBEE /* esrc_ssd_mobilenet_face_detection.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = 4CD12CCF272696DF006AEBEE /* esrc_ssd_mobilenet_face_detection.prototxt */; };
 		4CD12CD4272696E0006AEBEE /* esrc_ssd_mobilenet_face_detection.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 4CD12CD0272696DF006AEBEE /* esrc_ssd_mobilenet_face_detection.caffemodel */; };
-		4CD12CE32726A1D1006AEBEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD12CE12726A1D1006AEBEE /* Main.storyboard */; };
 		4CD12CE52726A2F8006AEBEE /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD12CE42726A2F8006AEBEE /* CircularProgressBarView.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,17 +37,17 @@
 
 /* Begin PBXFileReference section */
 		4C31FCA4272A4D5800654A66 /* ESRC_Heart_SDK_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ESRC_Heart_SDK_iOS.framework; path = "../../../../Library/Developer/Xcode/DerivedData/ESRC-Heart-SDK-iOS-cbymfxspudtrqgeszazrnslkruif/Build/Products/Debug-iphoneos/ESRC_Heart_SDK_iOS.framework"; sourceTree = "<group>"; };
+		4C86BDFD272BA7ED000BC2C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C86BDFF272BA814000BC2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CD12CA1272694D2006AEBEE /* ESRC-Heart-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ESRC-Heart-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD12CA4272694D2006AEBEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CD12CA6272694D2006AEBEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4CD12CA8272694D2006AEBEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4CD12CAD272694D3006AEBEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CD12CB0272694D3006AEBEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CD12CB2272694D3006AEBEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CD12CBC27269546006AEBEE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4CD12CCF272696DF006AEBEE /* esrc_ssd_mobilenet_face_detection.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = esrc_ssd_mobilenet_face_detection.prototxt; sourceTree = "<group>"; };
 		4CD12CD0272696DF006AEBEE /* esrc_ssd_mobilenet_face_detection.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = esrc_ssd_mobilenet_face_detection.caffemodel; sourceTree = "<group>"; };
-		4CD12CE22726A1D1006AEBEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../ESRC-SDK-iOS/ESRC-iOS/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		4CD12CE42726A2F8006AEBEE /* CircularProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,9 +89,9 @@
 				4CD12CE42726A2F8006AEBEE /* CircularProgressBarView.swift */,
 				4CD12CA6272694D2006AEBEE /* SceneDelegate.swift */,
 				4CD12CA8272694D2006AEBEE /* ViewController.swift */,
-				4CD12CE12726A1D1006AEBEE /* Main.storyboard */,
-				4CD12CAD272694D3006AEBEE /* Assets.xcassets */,
+				4C86BDFC272BA7ED000BC2C5 /* Main.storyboard */,
 				4CD12CAF272694D3006AEBEE /* LaunchScreen.storyboard */,
+				4C86BDFF272BA814000BC2C5 /* Assets.xcassets */,
 				4CD12CB2272694D3006AEBEE /* Info.plist */,
 			);
 			path = "ESRC-Heart-iOS";
@@ -174,9 +174,9 @@
 			files = (
 				4CD12CD4272696E0006AEBEE /* esrc_ssd_mobilenet_face_detection.caffemodel in Resources */,
 				4CD12CB1272694D3006AEBEE /* LaunchScreen.storyboard in Resources */,
-				4CD12CAE272694D3006AEBEE /* Assets.xcassets in Resources */,
-				4CD12CE32726A1D1006AEBEE /* Main.storyboard in Resources */,
+				4C86BDFE272BA7ED000BC2C5 /* Main.storyboard in Resources */,
 				4CD12CD3272696DF006AEBEE /* esrc_ssd_mobilenet_face_detection.prototxt in Resources */,
+				4C86BE00272BA814000BC2C5 /* Assets.xcassets in Resources */,
 				4CD12CBD27269546006AEBEE /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,20 +198,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4C86BDFC272BA7ED000BC2C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C86BDFD272BA7ED000BC2C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		4CD12CAF272694D3006AEBEE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4CD12CB0272694D3006AEBEE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		4CD12CE12726A1D1006AEBEE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CD12CE22726A1D1006AEBEE /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
