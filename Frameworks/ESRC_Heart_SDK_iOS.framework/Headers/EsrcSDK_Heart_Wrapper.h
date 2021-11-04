@@ -14,7 +14,7 @@
 
 @interface EsrcSDK_Heart_Wrapper : NSObject
 
-+ (bool) EsrcSDK_Heart_InitRemoteHRTask;
++ (bool) EsrcSDK_Heart_InitRemoteHRTask: (bool) enableRemoteHR param2: (bool) enableHRV;
 + (bool) EsrcSDK_Heart_ReleaseRemoteHRTask;
 + (void) EsrcSDK_Heart_FeedRemoteHRTask: (UIImage *) face param2: (bool *) isUpdateOnHR param3: (double *) progressRatioOnHR param4: (double *) hr param5: (bool *) isUpdateOnHRV param6: (double *) progressRatioOnHRV param7: (double *) hrv;
 

@@ -26,7 +26,24 @@ public protocol ESRCLicenseHandler {
   func onValidatedLicense()
   func onInvalidatedLicense()
 }
+@_hasMissingDesignatedInitializers public class MeasureEnvAnalyzer {
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class RemoteHREstimator {
+  @objc deinit
+}
+public class ESRCMeasureEnv {
+  public static var MEASURE_ENV_BRIGHTNESS_NONE: Swift.Int
+  public static var MEASURE_ENV_BRIGHTNESS_HIGH: Swift.Int
+  public static var MEASURE_ENV_BRIGHTNESS_NORMAL: Swift.Int
+  public static var MEASURE_ENV_BRIGHTNESS_LOW: Swift.Int
+  public init()
+  public init(brightness: Swift.Int)
+  public init(other: ESRC_Heart_SDK_iOS.ESRCMeasureEnv)
+  public func getBrightness() -> Swift.Int
+  public func setBrightness(brightness: Swift.Int)
+  public func setMeasureEnv(measureEnv: ESRC_Heart_SDK_iOS.ESRCMeasureEnv)
+  public func toString() -> Swift.String
   @objc deinit
 }
 public class ESRCFace {
@@ -117,10 +134,16 @@ public class ESRCProgressRatio {
 }
 public class ESRCProperty {
   public init()
-  public init(enableDraw: Swift.Bool)
+  public init(enableMeasureEnv: Swift.Bool, enableFace: Swift.Bool, enableRemoteHR: Swift.Bool, enableHRV: Swift.Bool)
   public init(other: ESRC_Heart_SDK_iOS.ESRCProperty)
-  public func getEnableDraw() -> Swift.Bool
-  public func setEnableDraw(enableDraw: Swift.Bool)
+  public func getEnableMeasureEnv() -> Swift.Bool
+  public func getEnableFace() -> Swift.Bool
+  public func getEnableRemoteHR() -> Swift.Bool
+  public func getEnableHRV() -> Swift.Bool
+  public func setEnableMeasureEnv(enableMeasureEnv: Swift.Bool)
+  public func setEnableFace(enableFace: Swift.Bool)
+  public func setEnableRemoteHR(enableRemoteHR: Swift.Bool)
+  public func setEnableHRV(enableHRV: Swift.Bool)
   public func toString() -> Swift.String
   @objc deinit
 }
@@ -129,13 +152,14 @@ public class ESRCProperty {
   public static func getApplicationId() -> Swift.String
   public static func getInstance() -> ESRC_Heart_SDK_iOS.ESRC
   public static func initWithApplicationId(appId: Swift.String, licenseHandler: ESRC_Heart_SDK_iOS.ESRCLicenseHandler) -> Swift.Bool
-  public static func start(handler: ESRC_Heart_SDK_iOS.ESRCHandler) -> Swift.Bool
+  public static func start(property: ESRC_Heart_SDK_iOS.ESRCProperty, handler: ESRC_Heart_SDK_iOS.ESRCHandler) -> Swift.Bool
   public static func stop() -> Swift.Bool
   public static func feed(frame: UIKit.UIImage) -> Swift.Bool
   public func getESRCHandler() -> ESRC_Heart_SDK_iOS.ESRCHandler?
   @objc deinit
 }
 public protocol ESRCHandler {
+  func onAnalyzedMeasureEnv(measureEnv: ESRC_Heart_SDK_iOS.ESRCMeasureEnv)
   func onDetectedFace(face: ESRC_Heart_SDK_iOS.ESRCFace)
   func onNotDetectedFace()
   func didChangedProgressRatioOnRemoteHR(progressRatio: Swift.Double)

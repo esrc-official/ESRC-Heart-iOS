@@ -14,7 +14,12 @@ class ViewController:  UIViewController, AVCaptureVideoDataOutputSampleBufferDel
 
     // ESRC variables
     let APP_ID: String = ""  // Applocation ID.
-    let ENABLE_DRAW: Bool = true;  // Enablement of visualization.
+    let ENABLE_DRAW: Bool = true;  // Whether visualize result or not.
+    var property: ESRCProperty = ESRCProperty(
+        enableMeasureEnv: true,  // Whether analyze measurement environment or not.
+        enableFace: true,  // Whether detect face or not.
+        enableRemoteHR: true,  // Whether estimate remote hr or not. If enableFace is false, it is also automatically set to false.
+        enableHRV: true);  // Whether analyze HRV not not. If enableFace or enableRemoteHR is false, it is also automatically set to false.
     var frame: UIImage? = nil
     var face: ESRCFace? = nil
     
@@ -208,7 +213,7 @@ class ViewController:  UIViewController, AVCaptureVideoDataOutputSampleBufferDel
             print("ESRC init is failed.")
         } else {
             // Start ESRC
-            if(!ESRC.start(handler: self)) {
+            if(!ESRC.start(property: self.property, handler: self)) {
                 print("ESRC start is failed.")
             }
             
@@ -301,6 +306,11 @@ extension ViewController: ESRCLicenseHandler, ESRCHandler {
     func onInvalidatedLicense() {
         print("onInvalidatedLicense.")
     }
+    
+    func onAnalyzedMeasureEnv(measureEnv: ESRCMeasureEnv) {
+        print("onAnalyzedMeasureEnv: " + measureEnv.toString())
+    }
+    
     
     func onDetectedFace(face: ESRCFace) {
         print("onDetectedFace: " + face.toString())
