@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C50C7582733D5D40070E514 /* ESRC_Heart_SDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C50C7562733D48C0070E514 /* ESRC_Heart_SDK_iOS.framework */; };
-		4C50C7592733D5D40070E514 /* ESRC_Heart_SDK_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C50C7562733D48C0070E514 /* ESRC_Heart_SDK_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4C86BDFE272BA7ED000BC2C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C86BDFC272BA7ED000BC2C5 /* Main.storyboard */; };
 		4C86BE00272BA814000BC2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C86BDFF272BA814000BC2C5 /* Assets.xcassets */; };
 		4CD12CA5272694D2006AEBEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD12CA4272694D2006AEBEE /* AppDelegate.swift */; };
@@ -19,6 +17,8 @@
 		4CD12CD3272696DF006AEBEE /* esrc_ssd_mobilenet_face_detection.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = 4CD12CCF272696DF006AEBEE /* esrc_ssd_mobilenet_face_detection.prototxt */; };
 		4CD12CD4272696E0006AEBEE /* esrc_ssd_mobilenet_face_detection.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 4CD12CD0272696DF006AEBEE /* esrc_ssd_mobilenet_face_detection.caffemodel */; };
 		4CD12CE52726A2F8006AEBEE /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD12CE42726A2F8006AEBEE /* CircularProgressBarView.swift */; };
+		B30DD0D4274275C300CF3215 /* ESRC_Heart_SDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30DD0D2274275B900CF3215 /* ESRC_Heart_SDK_iOS.framework */; platformFilter = ios; };
+		B30DD0D5274275C300CF3215 /* ESRC_Heart_SDK_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B30DD0D2274275B900CF3215 /* ESRC_Heart_SDK_iOS.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +28,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4C50C7592733D5D40070E514 /* ESRC_Heart_SDK_iOS.framework in Embed Frameworks */,
+				B30DD0D5274275C300CF3215 /* ESRC_Heart_SDK_iOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,7 +36,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4C50C7562733D48C0070E514 /* ESRC_Heart_SDK_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ESRC_Heart_SDK_iOS.framework; sourceTree = "<group>"; };
 		4C86BDFD272BA7ED000BC2C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C86BDFF272BA814000BC2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CD12CA1272694D2006AEBEE /* ESRC-Heart-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ESRC-Heart-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +48,7 @@
 		4CD12CCF272696DF006AEBEE /* esrc_ssd_mobilenet_face_detection.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = esrc_ssd_mobilenet_face_detection.prototxt; sourceTree = "<group>"; };
 		4CD12CD0272696DF006AEBEE /* esrc_ssd_mobilenet_face_detection.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = esrc_ssd_mobilenet_face_detection.caffemodel; sourceTree = "<group>"; };
 		4CD12CE42726A2F8006AEBEE /* CircularProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
+		B30DD0D2274275B900CF3215 /* ESRC_Heart_SDK_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ESRC_Heart_SDK_iOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C50C7582733D5D40070E514 /* ESRC_Heart_SDK_iOS.framework in Frameworks */,
+				B30DD0D4274275C300CF3215 /* ESRC_Heart_SDK_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +100,7 @@
 		4CD12CB9272694EA006AEBEE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4C50C7562733D48C0070E514 /* ESRC_Heart_SDK_iOS.framework */,
+				B30DD0D2274275B900CF3215 /* ESRC_Heart_SDK_iOS.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -339,7 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 240;
+				CURRENT_PROJECT_VERSION = 241;
 				DEVELOPMENT_TEAM = B8H9W99437;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -350,7 +350,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.4.0;
+				MARKETING_VERSION = 2.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.esrc.heart.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -364,7 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 240;
+				CURRENT_PROJECT_VERSION = 241;
 				DEVELOPMENT_TEAM = B8H9W99437;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -375,7 +375,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.4.0;
+				MARKETING_VERSION = 2.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.esrc.heart.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
