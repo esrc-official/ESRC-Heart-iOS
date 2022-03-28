@@ -19,7 +19,9 @@ class ViewController:  UIViewController, AVCaptureVideoDataOutputSampleBufferDel
         enableMeasureEnv: true,  // Whether analyze measurement environment or not.
         enableFace: true,  // Whether detect face or not.
         enableRemoteHR: true,  // Whether estimate remote hr or not. If enableFace is false, it is also automatically set to false.
-        enableHRV: true);  // Whether analyze HRV not not. If enableFace or enableRemoteHR is false, it is also automatically set to false.
+        enableHRV: true,  // Whether analyze HRV not not. If enableFace or enableRemoteHR is false, it is also automatically set to false.
+        enableEngagement: true)  // Whether recognize engagement or not. If enableRemoteHR and enableHRV are false, it is also automatically set to false.
+        
     var frame: UIImage? = nil
     var face: ESRCFace? = nil
     
@@ -32,6 +34,7 @@ class ViewController:  UIViewController, AVCaptureVideoDataOutputSampleBufferDel
     
     // Timer variables
     var timer: Timer?
+    var licenseTimer: Timer?
     
     // Layout variables
     @IBOutlet weak var facebox_image: UIImageView!
@@ -209,21 +212,8 @@ class ViewController:  UIViewController, AVCaptureVideoDataOutputSampleBufferDel
         }
         
         // Initialize ESRC
-        if(!ESRC.initWithApplicationId(appId: APP_ID, licenseHandler: self)) {
+        if (!ESRC.initWithApplicationId(appId: APP_ID, licenseHandler: self)) {
             print("ESRC init is failed.")
-        } else {
-            // Start ESRC
-            if(!ESRC.start(property: self.property, handler: self)) {
-                print("ESRC start is failed.")
-            }
-            
-            // Start timer (10 fps)
-            self.timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
-                // Feed ESRC
-                if(self.frame != nil) {
-                    ESRC.feed(frame: self.frame!)
-                }
-            }
         }
     }
 
@@ -233,6 +223,9 @@ class ViewController:  UIViewController, AVCaptureVideoDataOutputSampleBufferDel
         // Stop timer
         self.timer?.invalidate()
         
+        // Stop license timer
+        self.licenseTimer?.invalidate()
+        
         // Release ESRC
         if(!ESRC.stop()) {
             print("ESRC stop is failed.")
@@ -240,6 +233,41 @@ class ViewController:  UIViewController, AVCaptureVideoDataOutputSampleBufferDel
 
         // Stop the session on the background thread
         self.captureSession.stopRunning()
+    }
+    
+    func startApp() {
+        print("Start App")
+        // Start ESRC
+        if (!ESRC.start(property: self.property, handler: self)) {
+            print("ESRC start is failed.")
+        }
+        
+        print("Start timer")
+        // Start timer (10 fps)
+        self.timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
+            // Feed ESRC
+            if(self.frame != nil) {
+                print("Feed ESRC")
+                ESRC.feed(frame: self.frame!)
+            }
+        }
+        
+        print("Start license timer")
+        // Start license timer (after 80s)
+        self.licenseTimer = Timer.scheduledTimer(withTimeInterval: 80, repeats: false) { timer in
+            // Show alert dialog
+            let alert = UIAlertController(title: "Alert", message: "If you want to use the ESRC SDK, please visit the homepage: https://www.esrc.co.kr", preferredStyle: .alert)
+            let alertPositiveButton = UIAlertAction(title: "OK", style: .default) { action in
+                // Nothing
+            }
+            alert.addAction(alertPositiveButton)
+            self.present(alert, animated: true, completion: nil)
+            
+            // Close app
+            let closeTimer = Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { timer in
+                exit(0)
+            }
+        }
     }
     
     func setupPreview() {
@@ -301,6 +329,9 @@ extension ViewController: ESRCLicenseHandler, ESRCHandler {
     
     func onValidatedLicense() {
         print("onValidatedLicense.")
+        
+        // Start App
+        startApp()
     }
     
     func onInvalidatedLicense() {
@@ -407,5 +438,9 @@ extension ViewController: ESRCLicenseHandler, ESRCHandler {
         hrv_lnlf_val_text.text = String(format: "%.2f", hrv.getLnLf())
         hrv_lnhf_val_text.text = String(format: "%.2f", hrv.getLnHf())
         ans_balance_val_text.text = String(format: "%.2f", hrv.getLfHf())
+    }
+    
+    func onRecognizedEngagement(engagement: ESRCEngagement) {
+        print("onRecognizedEngagement: " + engagement.toString())
     }
 }

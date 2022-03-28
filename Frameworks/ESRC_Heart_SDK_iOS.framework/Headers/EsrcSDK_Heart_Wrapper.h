@@ -20,8 +20,8 @@
 
 + (bool) EsrcSDK_Heart_InitEngagementRecognitionTask;
 + (bool) EsrcSDK_Heart_ReleaseEngagementRecognitionTask;
-+ (void) EsrcSDK_Heart_FeedEngagementRecognitionInTimeDomainTask: (double) hr param2: (double *) probs param3: (int *) engagement;
-+ (void) EsrcSDK_Heart_FeedEngagementRecognitionInFrequencyDomainTask: (double *) hrv param2: (double *) probs param3: (int *) engagement;
++ (void) EsrcSDK_Heart_FeedEngagementRecognitionTimeDomainTask: (double) hr param2: (int *) score param3: (double *) probs param4: (int *) engagement;
++ (void) EsrcSDK_Heart_FeedEngagementRecognitionFrequencyDomainTask: (double *) hrv param2: (int *) score param3: (double *) probs param4: (int *) engagement;
 
 @end
 

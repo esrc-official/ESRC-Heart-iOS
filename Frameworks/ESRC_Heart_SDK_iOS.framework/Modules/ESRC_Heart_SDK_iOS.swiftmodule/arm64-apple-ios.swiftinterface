@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name ESRC_Heart_SDK_iOS
 @_exported import ESRC_Heart_SDK_iOS
 import Foundation
@@ -9,23 +9,24 @@ import _Concurrency
 @_hasMissingDesignatedInitializers public class FaceDetector {
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class ESRCLicense : ESRC_Heart_SDK_iOS.ESRCLicenseHandler {
-  public static var LICENSE_UNREG: Swift.Int
-  public static var LICENSE_FULL: Swift.Int
-  public static var LICENSE_FACE: Swift.Int
-  public static var LICENSE_HEART: Swift.Int
+@_hasMissingDesignatedInitializers public class ESRCLicense {
+  public static let LICENSE_UNREG: Swift.Int
+  public static let LICENSE_FULL: Swift.Int
+  public static let LICENSE_FACE: Swift.Int
+  public static let LICENSE_HEART: Swift.Int
   public static func getInstance() -> ESRC_Heart_SDK_iOS.ESRCLicense
   public static func initWithApplicationId(appId: Swift.String, licenseHandler: ESRC_Heart_SDK_iOS.ESRCLicenseHandler) -> Swift.Bool
   public static func getApplicationId() -> Swift.String
   public static func getType() -> Swift.Int
   public static func isValidated() -> Swift.Bool
-  public func onValidatedLicense()
-  public func onInvalidatedLicense()
   @objc deinit
 }
 public protocol ESRCLicenseHandler {
   func onValidatedLicense()
   func onInvalidatedLicense()
+}
+@_hasMissingDesignatedInitializers public class EngagementRecognizer {
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class MeasureEnvAnalyzer {
   @objc deinit
@@ -33,53 +34,91 @@ public protocol ESRCLicenseHandler {
 @_hasMissingDesignatedInitializers public class RemoteHREstimator {
   @objc deinit
 }
+public class ESRCPoint2f {
+  public init()
+  public init(x: Swift.Float, y: Swift.Float)
+  public init(other: ESRC_Heart_SDK_iOS.ESRCPoint2f)
+  public func getX() -> Swift.Float
+  public func getY() -> Swift.Float
+  public func setX(x: Swift.Float)
+  public func setY(y: Swift.Float)
+  public func setPoint(point: ESRC_Heart_SDK_iOS.ESRCPoint2f)
+  public func toString() -> Swift.String
+  @objc deinit
+}
+public class ESRCMat {
+  public init()
+  public init(frame: UIKit.UIImage)
+  public init(id: Swift.Int, frame: UIKit.UIImage)
+  public init(other: ESRC_Heart_SDK_iOS.ESRCMat)
+  public func getId() -> Swift.Int
+  public func getFrame() -> UIKit.UIImage?
+  public func setId(id: Swift.Int)
+  public func setFrame(frame: UIKit.UIImage)
+  public func setMat(other: ESRC_Heart_SDK_iOS.ESRCMat)
+  public func toString() -> Swift.String
+  @objc deinit
+}
 public class ESRCMeasureEnv {
-  public static var MEASURE_ENV_BRIGHTNESS_NONE: Swift.Int
-  public static var MEASURE_ENV_BRIGHTNESS_HIGH: Swift.Int
-  public static var MEASURE_ENV_BRIGHTNESS_NORMAL: Swift.Int
-  public static var MEASURE_ENV_BRIGHTNESS_LOW: Swift.Int
+  public static let MEASURE_ENV_BRIGHTNESS_NONE: Swift.Int
+  public static let MEASURE_ENV_BRIGHTNESS_HIGH: Swift.Int
+  public static let MEASURE_ENV_BRIGHTNESS_NORMAL: Swift.Int
+  public static let MEASURE_ENV_BRIGHTNESS_LOW: Swift.Int
   public init()
   public init(brightness: Swift.Int)
+  public init(id: Swift.Int, brightness: Swift.Int)
   public init(other: ESRC_Heart_SDK_iOS.ESRCMeasureEnv)
+  public func getId() -> Swift.Int
   public func getBrightness() -> Swift.Int
+  public func setId(id: Swift.Int)
   public func setBrightness(brightness: Swift.Int)
-  public func setMeasureEnv(measureEnv: ESRC_Heart_SDK_iOS.ESRCMeasureEnv)
+  public func setMeasureEnv(other: ESRC_Heart_SDK_iOS.ESRCMeasureEnv)
   public func toString() -> Swift.String
   @objc deinit
 }
 public class ESRCFace {
   public init()
   public init(x: Swift.Int, y: Swift.Int, w: Swift.Int, h: Swift.Int, conf: Swift.Double)
+  public init(id: Swift.Int, x: Swift.Int, y: Swift.Int, w: Swift.Int, h: Swift.Int, conf: Swift.Double)
   public init(other: ESRC_Heart_SDK_iOS.ESRCFace)
+  public func getId() -> Swift.Int
   public func getX() -> Swift.Int
   public func getY() -> Swift.Int
   public func getW() -> Swift.Int
   public func getH() -> Swift.Int
   public func getConf() -> Swift.Double
+  public func setId(id: Swift.Int)
   public func setX(x: Swift.Int)
   public func setY(y: Swift.Int)
   public func setW(w: Swift.Int)
   public func setH(h: Swift.Int)
   public func setConf(conf: Swift.Double)
-  public func setFace(face: ESRC_Heart_SDK_iOS.ESRCFace)
+  public func setFace(other: ESRC_Heart_SDK_iOS.ESRCFace)
   public func toString() -> Swift.String
   @objc deinit
 }
 public class ESRCRemoteHR {
   public init()
   public init(hr: Swift.Double)
+  public init(id: Swift.Int, hr: Swift.Double)
   public init(other: ESRC_Heart_SDK_iOS.ESRCRemoteHR)
+  public func getId() -> Swift.Int
   public func getHR() -> Swift.Double
+  public func setId(id: Swift.Int)
   public func setHR(hr: Swift.Double)
+  public func setRemoteHR(other: ESRC_Heart_SDK_iOS.ESRCRemoteHR)
   public func toString() -> Swift.String
   @objc deinit
 }
 public class ESRCHRV {
-  public static var HRV_COUNT: Swift.Int
+  public static let HRV_COUNT: Swift.Int
   public init()
   public init(bpm: Swift.Double, sdnn: Swift.Double, rmssd: Swift.Double, pnn50: Swift.Double, vlf: Swift.Double, lf: Swift.Double, hf: Swift.Double, vlfp: Swift.Double, lfp: Swift.Double, hfp: Swift.Double, tp: Swift.Double, lnVlf: Swift.Double, lnLf: Swift.Double, lnHf: Swift.Double, lnTp: Swift.Double, normLf: Swift.Double, normHf: Swift.Double, lfHf: Swift.Double, cohRatio: Swift.Double)
   public init(hrv: [Swift.Double])
+  public init(id: Swift.Int, bpm: Swift.Double, sdnn: Swift.Double, rmssd: Swift.Double, pnn50: Swift.Double, vlf: Swift.Double, lf: Swift.Double, hf: Swift.Double, vlfp: Swift.Double, lfp: Swift.Double, hfp: Swift.Double, tp: Swift.Double, lnVlf: Swift.Double, lnLf: Swift.Double, lnHf: Swift.Double, lnTp: Swift.Double, normLf: Swift.Double, normHf: Swift.Double, lfHf: Swift.Double, cohRatio: Swift.Double)
+  public init(id: Swift.Int, hrv: [Swift.Double])
   public init(other: ESRC_Heart_SDK_iOS.ESRCHRV)
+  public func getId() -> Swift.Int
   public func getBpm() -> Swift.Double
   public func getSdnn() -> Swift.Double
   public func getRmssd() -> Swift.Double
@@ -99,6 +138,7 @@ public class ESRCHRV {
   public func getNormHf() -> Swift.Double
   public func getLfHf() -> Swift.Double
   public func getCohRatio() -> Swift.Double
+  public func setId(id: Swift.Int)
   public func setBpm(bpm: Swift.Double)
   public func setSdnn(sdnn: Swift.Double)
   public func setRmssd(rmssd: Swift.Double)
@@ -119,8 +159,33 @@ public class ESRCHRV {
   public func setLfHf(lfHf: Swift.Double)
   public func setCohRatio(cohRatio: Swift.Double)
   public func setHRV(hrv: [Swift.Double])
-  public func setHRV(hrv: ESRC_Heart_SDK_iOS.ESRCHRV)
+  public func setHRV(other: ESRC_Heart_SDK_iOS.ESRCHRV)
   public func toArray() -> [Swift.Double]
+  public func toString() -> Swift.String
+  @objc deinit
+}
+public class ESRCEngagement {
+  public static let EMOTION_COUNT: Swift.Int
+  public static let EMOTION_NONE: Swift.Int
+  public static let EMOTION_NORMAL: Swift.Int
+  public static let EMOTION_FOCUSING: Swift.Int
+  public static let EMOTION_ENGAGEMENT: Swift.Int
+  public init()
+  public init(emotionScore: Swift.Int, emotionProbs: [Swift.Double], emotion: Swift.Int)
+  public init(id: Swift.Int, emotionScore: Swift.Int, emotionProbs: [Swift.Double], emotion: Swift.Int)
+  public init(other: ESRC_Heart_SDK_iOS.ESRCEngagement)
+  public func getId() -> Swift.Int
+  public func getEmotionScore() -> Swift.Int
+  public func getEmotionProbs() -> [Swift.Double]
+  public func getEmotionProbs(index: Swift.Int) -> Swift.Double
+  public func getEmotion() -> Swift.Int
+  public func setId(id: Swift.Int)
+  public func setEmotionScore(emotionScore: Swift.Int)
+  public func setEmotionProbs(emotionProbs: [Swift.Double])
+  public func setEmotionProb(index: Swift.Int, emotionProb: Swift.Double)
+  public func setEmotion(emotion: Swift.Int)
+  public func setEngagement(other: ESRC_Heart_SDK_iOS.ESRCEngagement)
+  public func getEmotionStr() -> Swift.String
   public func toString() -> Swift.String
   @objc deinit
 }
@@ -133,19 +198,26 @@ public class ESRCProgressRatio {
   public func toString() -> Swift.String
   @objc deinit
 }
-public class ESRCProperty {
+open class ESRCProperty {
   public init()
-  public init(enableMeasureEnv: Swift.Bool, enableFace: Swift.Bool, enableRemoteHR: Swift.Bool, enableHRV: Swift.Bool)
+  public init(enableMeasureEnv: Swift.Bool, enableFace: Swift.Bool, enableRemoteHR: Swift.Bool, enableHRV: Swift.Bool, enableEngagement: Swift.Bool)
   public init(other: ESRC_Heart_SDK_iOS.ESRCProperty)
   public func getEnableMeasureEnv() -> Swift.Bool
   public func getEnableFace() -> Swift.Bool
   public func getEnableRemoteHR() -> Swift.Bool
   public func getEnableHRV() -> Swift.Bool
+  public func getEnableEngagement() -> Swift.Bool
   public func setEnableMeasureEnv(enableMeasureEnv: Swift.Bool)
   public func setEnableFace(enableFace: Swift.Bool)
   public func setEnableRemoteHR(enableRemoteHR: Swift.Bool)
   public func setEnableHRV(enableHRV: Swift.Bool)
-  public func toString() -> Swift.String
+  public func setEnableEngagement(enableEngagement: Swift.Bool)
+  open func toString() -> Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class APIClient {
+  public static func getInstance() -> ESRC_Heart_SDK_iOS.APIClient
+  public static func validateLicense(appId: Swift.String, completionHandler: @escaping (Swift.Bool, Any) -> Swift.Void)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ESRC {
@@ -156,6 +228,8 @@ public class ESRCProperty {
   public static func start(property: ESRC_Heart_SDK_iOS.ESRCProperty, handler: ESRC_Heart_SDK_iOS.ESRCHandler) -> Swift.Bool
   public static func stop() -> Swift.Bool
   public static func feed(frame: UIKit.UIImage) -> Swift.Bool
+  public static func feed(id: Swift.Int, frame: UIKit.UIImage) -> Swift.Bool
+  public static func feed(mat: ESRC_Heart_SDK_iOS.ESRCMat) -> Swift.Bool
   public func getESRCHandler() -> ESRC_Heart_SDK_iOS.ESRCHandler?
   @objc deinit
 }
@@ -167,4 +241,11 @@ public protocol ESRCHandler {
   func onEstimatedRemoteHR(remoteHR: ESRC_Heart_SDK_iOS.ESRCRemoteHR)
   func didChangedProgressRatioOnHRV(progressRatio: Swift.Double)
   func onAnalyzedHRV(hrv: ESRC_Heart_SDK_iOS.ESRCHRV)
+  func onRecognizedEngagement(engagement: ESRC_Heart_SDK_iOS.ESRCEngagement)
+}
+@_hasMissingDesignatedInitializers public class ClientInfo {
+  public static func getBundleIdentifier() -> Swift.String?
+  public static func getDisplayName() -> Swift.String?
+  public static func getAppVersion() -> Swift.String?
+  @objc deinit
 }
