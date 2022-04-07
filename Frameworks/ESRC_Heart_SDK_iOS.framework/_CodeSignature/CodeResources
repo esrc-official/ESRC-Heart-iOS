@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/ESRC_Heart_SDK_iOS.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		wLlK6Cmyq4+6WbpmYzGrWJEe1bc=
+		PYeGtrHzfBb9S3fsI8ibrWteuD4=
 		</data>
 		<key>Modules/ESRC_Heart_SDK_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/ESRC_Heart_SDK_iOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		fXp7iFJa03Qkhw1JRW6WKOSp6Wk=
+		Azxe4ytLU5l0AlW97qj4RyKhcIA=
 		</data>
 		<key>Modules/ESRC_Heart_SDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		USJj04YXjzxnVc3dzzCD0rLTSLY=
+		sTI62zpn1BoJuGhgWdIxj86IoBQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,7 +98,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9JamnDx7ALb8JTWdY/dmqMcFKG79/6EPdiMoSwMN2+k=
+			mriQfOVD3eh2jpkh9PhE0snhK92bm8pfPUm93N4Y4aw=
 			</data>
 		</dict>
 		<key>Modules/ESRC_Heart_SDK_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -112,14 +112,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0Owt57KhwlXltMy/Sp2s11MWhf9OiKIBpe1K4uYxA/k=
+			4nJPPejWx3c8tjrQa+8ELUuv9Cxqon0XFFaBf3XCxBM=
 			</data>
 		</dict>
 		<key>Modules/ESRC_Heart_SDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0ES/0FZGghhjeM12Wgk4j1Y94789QkDdZEougklXL64=
+			fh9NkRkzlZtopaFIpfAASrkWo/2aR0zlbZ1KkwUsUwg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

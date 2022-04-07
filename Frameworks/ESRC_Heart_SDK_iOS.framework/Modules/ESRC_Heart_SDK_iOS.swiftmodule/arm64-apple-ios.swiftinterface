@@ -243,6 +243,10 @@ public protocol ESRCHandler {
   func onAnalyzedHRV(hrv: ESRC_Heart_SDK_iOS.ESRCHRV)
   func onRecognizedEngagement(engagement: ESRC_Heart_SDK_iOS.ESRCEngagement)
 }
+@_hasMissingDesignatedInitializers public class DeviceInfo {
+  public static func getDeviceId() -> Swift.String?
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class ClientInfo {
   public static func getBundleIdentifier() -> Swift.String?
   public static func getDisplayName() -> Swift.String?
