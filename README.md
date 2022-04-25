@@ -12,7 +12,7 @@
 
 ## Installation
 
-To use our iOS samples, you should first install [ESRC Heart SDK for iOS](https://github.com/esrc-official/ESRC-Heart-SDK-iOS) 2.3.0 or higher on your system and should be received License Key by requesting by our email: **esrc@esrc.co.kr** <br /> 
+To use our iOS samples, you should first install [ESRC Heart SDK for iOS](https://github.com/esrc-official/ESRC-Heart-SDK-iOS) 2.4.6 or higher on your system and should be received License Key by requesting by our email: **esrc@esrc.co.kr** <br /> 
 
 ## Before getting started
 
@@ -57,7 +57,8 @@ ESRC.start(
         enableMeasureEnv: true,  // Whether analyze measurement environment or not.
         enableFace: true,  // Whether detect face or not.
         enableRemoteHR: true,  // Whether estimate remote hr or not. If enableFace is false, it is also automatically set to false.
-        enableHRV: true),  // Whether analyze HRV not not. If enableFace or enableRemoteHR is false, it is also automatically set to false.
+        enableHRV: true,  // Whether analyze HRV or not. If enableFace or enableRemoteHR is false, it is also automatically set to false.
+        enableEngagement: true),  // Whether recognize engagement or not. If enableFace or enableRemoteHR is false, it is also automatically set to false.
     handler: ESRCHandler() {
         func onDetectedFace(face: ESRCFace) {
             // The face is detected.
@@ -68,12 +69,12 @@ ESRC.start(
         }
     
         // Please implement other callback method of ESRCHandler interface.
-        func onNotDetectedFace() { … }
         func onAnalyzedMeasureEnv(measureEnv: ESRCMeasureEnv) { … }
         func didChangedProgressRatioOnRemoteHR(progressRatio: Double) { … }
         func onEstimatedRemoteHR(remoteHR: ESRCRemoteHR) { … }
         func didChangedProgressRatioOnHRV(progressRatio: Double) { … }
         func onAnalyzedHRV(hrv: ESRCHRV) { … }
+        func onRecognizedEngagement(engagement: ESRCEngagement) { … }
 });
 ```
 

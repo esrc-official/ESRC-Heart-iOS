@@ -10,39 +10,39 @@
 		</data>
 		<key>Headers/ESRC_Heart_SDK_iOS.h</key>
 		<data>
-		j6tjxOn+CW+Ngu8U+bj4jzGf0JI=
+		zBXJsoiM2H5KLnnGFPgoNgJQ/Iw=
 		</data>
 		<key>Headers/EsrcSDK_Face_Wrapper.h</key>
 		<data>
-		t5wuL+ApURu6g05X00SHLT/H9g4=
+		ayQ9jW18wNVhD/U7reHtkOTNPbU=
 		</data>
 		<key>Headers/EsrcSDK_Heart_Wrapper.h</key>
 		<data>
-		/LM+10cZuHrhz8kKFaXuHz2Jp7I=
+		/eyMoNH52O9X5+L9Uff4V/EPmL4=
 		</data>
 		<key>Headers/EsrcSDK_MeasureEnv_Wrapper.h</key>
 		<data>
-		+bWqNRu9jb1pm9YUWGup+EkytPY=
+		ir4GjsSMm5MDpQunx1nGvG3gAX0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		c20okb2NylpHtNMF5WoymweTF5Y=
+		N2Ajwsl7h89i3MYwSoIPLwVCxdE=
 		</data>
 		<key>Modules/ESRC_Heart_SDK_iOS.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		PYeGtrHzfBb9S3fsI8ibrWteuD4=
+		1Q5Mrg9lCw6nKT4LWy5lVd/Q58M=
 		</data>
 		<key>Modules/ESRC_Heart_SDK_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		uG/CyvGA4MCp+TVYkI+niBjuWB4=
+		VdqazbzzLvDuXL6qXpO5sWtJIMg=
 		</data>
 		<key>Modules/ESRC_Heart_SDK_iOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Azxe4ytLU5l0AlW97qj4RyKhcIA=
+		qklq4HG0lhPgBGnjhubWuKhxGPE=
 		</data>
 		<key>Modules/ESRC_Heart_SDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		sTI62zpn1BoJuGhgWdIxj86IoBQ=
+		IHwZCHG5phgO+UrKf5WqWj1mybg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,56 +70,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7/bgviLQScIvp340IVQT07jHw/WpICI/hKKY7SeL4Xk=
+			8TjLPpO0XmT3jHp6fQ9v/Bfz+CuA+9vIi+lIm8Wc80c=
 			</data>
 		</dict>
 		<key>Headers/EsrcSDK_Face_Wrapper.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xBVTZq+A9DC5QH9ofeUxkbqbQIkqaw1zi+XioH5V+oA=
+			MF5QfjF0n7e5onN6fuzv4E4BAEbHdxyhMIeyTKzTcX0=
 			</data>
 		</dict>
 		<key>Headers/EsrcSDK_Heart_Wrapper.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+TSaV25DZDYIuv4y7ZQ/hyemQZbUQEbEhtsZlEgSspg=
+			tN57jiyF95Ey86T1ezlIvGfp0zI+wQayngeqTx2H2LQ=
 			</data>
 		</dict>
 		<key>Headers/EsrcSDK_MeasureEnv_Wrapper.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cx35FR1+J0MXaiHnchJUfs1DweBktJe/z6rd2QSF1EY=
+			GE7RIaH2SGgsqXQiB4PH3aK6BYMFoRYDSLfweKvW9Q8=
 			</data>
 		</dict>
 		<key>Modules/ESRC_Heart_SDK_iOS.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mriQfOVD3eh2jpkh9PhE0snhK92bm8pfPUm93N4Y4aw=
+			IomaoV+M7XDwi5A3N7qifV94G+hVurwXLtpHBGFbcKc=
 			</data>
 		</dict>
 		<key>Modules/ESRC_Heart_SDK_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gDzQ9ZqxP4brjlJv9Lgh7d1BbGmexKZx7HB+XuR3b1Q=
+			t7ITlHIMh864HwHz0kJ3B3cPgwsuAw2hA3V0EsNWp4g=
 			</data>
 		</dict>
 		<key>Modules/ESRC_Heart_SDK_iOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4nJPPejWx3c8tjrQa+8ELUuv9Cxqon0XFFaBf3XCxBM=
+			c0JBQIPXlGUwlUCyV7xQv20GCSbF1DTNzRWmhF4CJqs=
 			</data>
 		</dict>
 		<key>Modules/ESRC_Heart_SDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fh9NkRkzlZtopaFIpfAASrkWo/2aR0zlbZ1KkwUsUwg=
+			1VuEJlgJWsnqSeTw7fK0rZrQhud/U7RAGbE/EVqWBL4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

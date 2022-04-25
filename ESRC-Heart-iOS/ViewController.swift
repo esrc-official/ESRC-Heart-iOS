@@ -13,7 +13,7 @@ import ESRC_Heart_SDK_iOS
 class ViewController:  UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
 
     // ESRC variables
-    let APP_ID: String = ""  // Application ID.
+    let APP_ID: String = "9"  // Application ID.
     let ENABLE_DRAW: Bool = false;  // Whether visualize result or not.
     var property: ESRCProperty = ESRCProperty(
         enableMeasureEnv: true,  // Whether analyze measurement environment or not.
@@ -326,7 +326,7 @@ class ViewController:  UIViewController, AVCaptureVideoDataOutputSampleBufferDel
 }
 
 extension ViewController: ESRCLicenseHandler, ESRCHandler {
-    
+
     func onValidatedLicense() {
         print("onValidatedLicense.")
         
@@ -345,31 +345,33 @@ extension ViewController: ESRCLicenseHandler, ESRCHandler {
     
     func onDetectedFace(face: ESRCFace) {
         print("onDetectedFace: " + face.toString())
-        self.face = face
         
-        facebox_image.layer.borderWidth = 8
-        facebox_image.layer.borderColor = UIColor(red: 0.92, green: 0.0, blue: 0.55, alpha: 1.0).cgColor
+        
+        // Whether face is detected or not
+        if (face.getIsDetect()) {  // If face is detected
+            self.face = face
+            
+            facebox_image.layer.borderWidth = 8
+            facebox_image.layer.borderColor = UIColor(red: 0.92, green: 0.0, blue: 0.55, alpha: 1.0).cgColor
+        } else {  // If face is not detected
+            self.face = nil
+            
+            facebox_image.layer.borderWidth = 4
+            facebox_image.layer.borderColor = UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1.0).cgColor
+        }
     }
     
-    func onNotDetectedFace() {
-        print("onNotDetectedFace")
-        self.face = nil
-        
-        facebox_image.layer.borderWidth = 4
-        facebox_image.layer.borderColor = UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1.0).cgColor
-    }
-    
-    func didChangedProgressRatioOnRemoteHR(progressRatio: Double) {
-        print("didChangedProgressRatioOnRemoteHR: " + (String)(progressRatio))
+    func didChangedProgressRatioOnRemoteHR(progressRatio: ESRCProgressRatio) {
+        print("didChangedProgressRatioOnRemoteHR: " + progressRatio.toString())
         
         if (hr_indicator.isAnimating == true) {
             hr_indicator.stopAnimating()
         }
 
         // display progress bar
-        if(progressRatio < 100){
+        if(progressRatio.getProgress() < 100){
             hr_circularView.isHidden = false
-            hr_circularView.progressAnimation(ratio: progressRatio, oneStep: 0.01)
+            hr_circularView.progressAnimation(ratio: progressRatio.getProgress(), oneStep: 0.01)
         }
     }
     
@@ -385,8 +387,8 @@ extension ViewController: ESRCLicenseHandler, ESRCHandler {
         hr_val_text.text = String(format: "%.0f", remoteHR.getHR())
     }
     
-    func didChangedProgressRatioOnHRV(progressRatio: Double) {
-        print("didChangedProgressRatioOnHRV: " + (String)(progressRatio))
+    func didChangedProgressRatioOnHRV(progressRatio: ESRCProgressRatio) {
+        print("didChangedProgressRatioOnHRV: " + progressRatio.toString())
         
         // Stop indicator animation
         if (hrv_sdnn_indicator.isAnimating == true) {
@@ -398,17 +400,17 @@ extension ViewController: ESRCLicenseHandler, ESRCHandler {
         }
 
         // Display progress bar
-        if(progressRatio < 100){
+        if(progressRatio.getProgress() < 100){
             hrv_sdnn_circularView.isHidden = false
             hrv_rmssd_circularView.isHidden = false
             hrv_lnlf_circularView.isHidden = false
             hrv_lnhf_circularView.isHidden = false
             ans_balance_circularView.isHidden = false
-            hrv_sdnn_circularView.progressAnimation(ratio: progressRatio, oneStep: 0.01666)
-            hrv_rmssd_circularView.progressAnimation(ratio: progressRatio, oneStep: 0.01666)
-            hrv_lnlf_circularView.progressAnimation(ratio: progressRatio, oneStep: 0.01666)
-            hrv_lnhf_circularView.progressAnimation(ratio: progressRatio, oneStep: 0.01666)
-            ans_balance_circularView.progressAnimation(ratio: progressRatio, oneStep: 0.01666)
+            hrv_sdnn_circularView.progressAnimation(ratio: progressRatio.getProgress(), oneStep: 0.01666)
+            hrv_rmssd_circularView.progressAnimation(ratio: progressRatio.getProgress(), oneStep: 0.01666)
+            hrv_lnlf_circularView.progressAnimation(ratio: progressRatio.getProgress(), oneStep: 0.01666)
+            hrv_lnhf_circularView.progressAnimation(ratio: progressRatio.getProgress(), oneStep: 0.01666)
+            ans_balance_circularView.progressAnimation(ratio: progressRatio.getProgress(), oneStep: 0.01666)
         }
     }
     
