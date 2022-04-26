@@ -13,7 +13,7 @@ import ESRC_Heart_SDK_iOS
 class ViewController:  UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
 
     // ESRC variables
-    let APP_ID: String = "9"  // Application ID.
+    let APP_ID: String = ""  // Application ID.
     let ENABLE_DRAW: Bool = false;  // Whether visualize result or not.
     var property: ESRCProperty = ESRCProperty(
         enableMeasureEnv: true,  // Whether analyze measurement environment or not.

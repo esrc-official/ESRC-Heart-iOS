@@ -217,10 +217,15 @@ public class ESRCEngagement {
 }
 public class ESRCProgressRatio {
   public init()
+  public init(id: Swift.Int)
   public init(progress: Swift.Double)
+  public init(id: Swift.Int, progress: Swift.Double)
   public init(other: ESRC_Heart_SDK_iOS.ESRCProgressRatio)
+  public func getId() -> Swift.Int
   public func getProgress() -> Swift.Double
+  public func setId(id: Swift.Int)
   public func setProgress(progress: Swift.Double)
+  public func setProgressRatio(other: ESRC_Heart_SDK_iOS.ESRCProgressRatio)
   public func toString() -> Swift.String
   @objc deinit
 }
