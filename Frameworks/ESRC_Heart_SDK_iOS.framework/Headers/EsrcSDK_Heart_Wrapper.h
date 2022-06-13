@@ -40,11 +40,13 @@
  * @param isUpdateOnHR Whether estimate remote hr or not.
  * @param progressRatioOnHR Progress on remote hr.
  * @param hr Estimated remote hr.
+ * @param snr Signal to noise ratio.
  * @param isUpdateOnHRV Whether analyze HRV or not.
  * @param progressRatioOnHRV Progress on HRV.
  * @param hrv Analyzed HRV.
+ * @param ppiCount PPI count.
  */
-+ (void) EsrcSDK_Heart_FeedRemoteHRTask: (UIImage *) bboxFrame param2: (bool *) isUpdateOnHR param3: (double *) progressRatioOnHR param4: (double *) hr param5: (bool *) isUpdateOnHRV param6: (double *) progressRatioOnHRV param7: (double *) hrv;
++ (void) EsrcSDK_Heart_FeedRemoteHRTask: (UIImage *) bboxFrame param2: (bool *) isUpdateOnHR param3: (double *) progressRatioOnHR param4: (double *) hr param5: (double *) snr param6: (bool *) isUpdateOnHRV param7: (double *) progressRatioOnHRV param8: (double *) hrv param9: (int *) ppiCount;
 
 /**
  * Initializes engagement recognition task.

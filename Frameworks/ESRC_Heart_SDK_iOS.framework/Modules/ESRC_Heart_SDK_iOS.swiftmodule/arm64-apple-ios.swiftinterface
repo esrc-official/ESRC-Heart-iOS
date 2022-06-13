@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name ESRC_Heart_SDK_iOS
 @_exported import ESRC_Heart_SDK_iOS
 import Foundation
@@ -116,13 +116,15 @@ public class ESRCFace {
 public class ESRCRemoteHR {
   public init()
   public init(id: Swift.Int)
-  public init(hr: Swift.Double)
-  public init(id: Swift.Int, hr: Swift.Double)
+  public init(hr: Swift.Double, snr: Swift.Double)
+  public init(id: Swift.Int, hr: Swift.Double, snr: Swift.Double)
   public init(other: ESRC_Heart_SDK_iOS.ESRCRemoteHR)
   public func getId() -> Swift.Int
   public func getHR() -> Swift.Double
+  public func getSNR() -> Swift.Double
   public func setId(id: Swift.Int)
   public func setHR(hr: Swift.Double)
+  public func setSNR(snr: Swift.Double)
   public func setRemoteHR(other: ESRC_Heart_SDK_iOS.ESRCRemoteHR)
   public func toString() -> Swift.String
   @objc deinit
@@ -131,10 +133,10 @@ public class ESRCHRV {
   public static let HRV_COUNT: Swift.Int
   public init()
   public init(id: Swift.Int)
-  public init(bpm: Swift.Double, sdnn: Swift.Double, rmssd: Swift.Double, pnn50: Swift.Double, vlf: Swift.Double, lf: Swift.Double, hf: Swift.Double, vlfp: Swift.Double, lfp: Swift.Double, hfp: Swift.Double, tp: Swift.Double, lnVlf: Swift.Double, lnLf: Swift.Double, lnHf: Swift.Double, lnTp: Swift.Double, normLf: Swift.Double, normHf: Swift.Double, lfHf: Swift.Double, cohRatio: Swift.Double)
-  public init(hrv: [Swift.Double])
-  public init(id: Swift.Int, bpm: Swift.Double, sdnn: Swift.Double, rmssd: Swift.Double, pnn50: Swift.Double, vlf: Swift.Double, lf: Swift.Double, hf: Swift.Double, vlfp: Swift.Double, lfp: Swift.Double, hfp: Swift.Double, tp: Swift.Double, lnVlf: Swift.Double, lnLf: Swift.Double, lnHf: Swift.Double, lnTp: Swift.Double, normLf: Swift.Double, normHf: Swift.Double, lfHf: Swift.Double, cohRatio: Swift.Double)
-  public init(id: Swift.Int, hrv: [Swift.Double])
+  public init(bpm: Swift.Double, sdnn: Swift.Double, rmssd: Swift.Double, pnn50: Swift.Double, vlf: Swift.Double, lf: Swift.Double, hf: Swift.Double, vlfp: Swift.Double, lfp: Swift.Double, hfp: Swift.Double, tp: Swift.Double, lnVlf: Swift.Double, lnLf: Swift.Double, lnHf: Swift.Double, lnTp: Swift.Double, normLf: Swift.Double, normHf: Swift.Double, lfHf: Swift.Double, cohRatio: Swift.Double, ppiCount: Swift.Int)
+  public init(hrv: [Swift.Double], ppiCount: Swift.Int)
+  public init(id: Swift.Int, bpm: Swift.Double, sdnn: Swift.Double, rmssd: Swift.Double, pnn50: Swift.Double, vlf: Swift.Double, lf: Swift.Double, hf: Swift.Double, vlfp: Swift.Double, lfp: Swift.Double, hfp: Swift.Double, tp: Swift.Double, lnVlf: Swift.Double, lnLf: Swift.Double, lnHf: Swift.Double, lnTp: Swift.Double, normLf: Swift.Double, normHf: Swift.Double, lfHf: Swift.Double, cohRatio: Swift.Double, ppiCount: Swift.Int)
+  public init(id: Swift.Int, hrv: [Swift.Double], ppiCount: Swift.Int)
   public init(other: ESRC_Heart_SDK_iOS.ESRCHRV)
   public func getId() -> Swift.Int
   public func getBpm() -> Swift.Double
@@ -156,6 +158,7 @@ public class ESRCHRV {
   public func getNormHf() -> Swift.Double
   public func getLfHf() -> Swift.Double
   public func getCohRatio() -> Swift.Double
+  public func getPPICount() -> Swift.Int
   public func setId(id: Swift.Int)
   public func setBpm(bpm: Swift.Double)
   public func setSdnn(sdnn: Swift.Double)
@@ -176,6 +179,7 @@ public class ESRCHRV {
   public func setNormHf(normHf: Swift.Double)
   public func setLfHf(lfHf: Swift.Double)
   public func setCohRatio(cohRatio: Swift.Double)
+  public func setPPICount(ppiCount: Swift.Int)
   public func setHRV(hrv: [Swift.Double])
   public func setHRV(other: ESRC_Heart_SDK_iOS.ESRCHRV)
   public func toArray() -> [Swift.Double]

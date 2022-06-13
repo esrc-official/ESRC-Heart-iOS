@@ -13,7 +13,7 @@ import ESRC_Heart_SDK_iOS
 class ViewController:  UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
 
     // ESRC variables
-    let APP_ID: String = ""  // Application ID.
+    let APP_ID: String = "APP_ID"  // Application ID.
     let ENABLE_DRAW: Bool = false;  // Whether visualize result or not.
     var property: ESRCProperty = ESRCProperty(
         enableMeasureEnv: true,  // Whether analyze measurement environment or not.
@@ -247,27 +247,25 @@ class ViewController:  UIViewController, AVCaptureVideoDataOutputSampleBufferDel
         self.timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
             // Feed ESRC
             if(self.frame != nil) {
-                print("Feed ESRC")
                 ESRC.feed(frame: self.frame!)
             }
         }
         
-        print("Start license timer")
-        // Start license timer (after 80s)
-        self.licenseTimer = Timer.scheduledTimer(withTimeInterval: 80, repeats: false) { timer in
-            // Show alert dialog
-            let alert = UIAlertController(title: "Alert", message: "If you want to use the ESRC SDK, please visit the homepage: https://www.esrc.co.kr", preferredStyle: .alert)
-            let alertPositiveButton = UIAlertAction(title: "OK", style: .default) { action in
-                // Nothing
-            }
-            alert.addAction(alertPositiveButton)
-            self.present(alert, animated: true, completion: nil)
-            
-            // Close app
-            let closeTimer = Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { timer in
-                exit(0)
-            }
-        }
+//        // Start license timer (after 80s)
+//        self.licenseTimer = Timer.scheduledTimer(withTimeInterval: 80, repeats: false) { timer in
+//            // Show alert dialog
+//            let alert = UIAlertController(title: "Alert", message: "If you want to use the ESRC SDK, please visit the homepage: https://www.esrc.co.kr", preferredStyle: .alert)
+//            let alertPositiveButton = UIAlertAction(title: "OK", style: .default) { action in
+//                // Nothing
+//            }
+//            alert.addAction(alertPositiveButton)
+//            self.present(alert, animated: true, completion: nil)
+//
+//            // Close app
+//            let closeTimer = Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { timer in
+//                exit(0)
+//            }
+//        }
     }
     
     func setupPreview() {

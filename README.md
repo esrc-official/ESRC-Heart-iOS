@@ -12,7 +12,7 @@
 
 ## Installation
 
-To use our iOS samples, you should first install [ESRC Heart SDK for iOS](https://github.com/esrc-official/ESRC-Heart-SDK-iOS) 2.4.6 or higher on your system and should be received License Key by requesting by our email: **esrc@esrc.co.kr** <br /> 
+To use our iOS samples, you should first install [ESRC Heart SDK for iOS](https://github.com/esrc-official/ESRC-Heart-SDK-iOS) 2.5.0 or higher on your system and should be received License Key by requesting by our email: **esrc@esrc.co.kr** <br /> 
 
 ## Before getting started
 
