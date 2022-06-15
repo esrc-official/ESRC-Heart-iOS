@@ -332,6 +332,14 @@ extension ViewController: ESRCLicenseHandler, ESRCHandler {
     
     func onInvalidatedLicense() {
         print("onInvalidatedLicense.")
+        
+        // Show alert dialog
+        let alert = UIAlertController(title: "Alert", message: "If you want to use the ESRC SDK, please visit the homepage: https://www.esrc.co.kr", preferredStyle: .alert)
+        let alertPositiveButton = UIAlertAction(title: "OK", style: .default) { action in
+            // Nothing
+        }
+        alert.addAction(alertPositiveButton)
+        self.present(alert, animated: true, completion: nil)
     }
     
     func onAnalyzedMeasureEnv(measureEnv: ESRCMeasureEnv) {
