@@ -236,13 +236,11 @@ class ViewController:  UIViewController, AVCaptureVideoDataOutputSampleBufferDel
     }
     
     func startApp() {
-        print("Start App")
         // Start ESRC
         if (!ESRC.start(property: self.property, handler: self)) {
             print("ESRC start is failed.")
         }
         
-        print("Start timer")
         // Start timer (10 fps)
         self.timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
             // Feed ESRC
@@ -251,21 +249,21 @@ class ViewController:  UIViewController, AVCaptureVideoDataOutputSampleBufferDel
             }
         }
         
-//        // Start license timer (after 80s)
-//        self.licenseTimer = Timer.scheduledTimer(withTimeInterval: 80, repeats: false) { timer in
-//            // Show alert dialog
-//            let alert = UIAlertController(title: "Alert", message: "If you want to use the ESRC SDK, please visit the homepage: https://www.esrc.co.kr", preferredStyle: .alert)
-//            let alertPositiveButton = UIAlertAction(title: "OK", style: .default) { action in
-//                // Nothing
-//            }
-//            alert.addAction(alertPositiveButton)
-//            self.present(alert, animated: true, completion: nil)
-//
-//            // Close app
-//            let closeTimer = Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { timer in
-//                exit(0)
-//            }
-//        }
+        // Start license timer (after 300s)
+        self.licenseTimer = Timer.scheduledTimer(withTimeInterval: 300, repeats: false) { timer in
+            // Show alert dialog
+            let alert = UIAlertController(title: "Alert", message: "If you want to use the ESRC SDK, please visit the homepage: https://www.esrc.co.kr", preferredStyle: .alert)
+            let alertPositiveButton = UIAlertAction(title: "OK", style: .default) { action in
+                // Nothing
+            }
+            alert.addAction(alertPositiveButton)
+            self.present(alert, animated: true, completion: nil)
+
+            // Close app
+            let closeTimer = Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { timer in
+                exit(0)
+            }
+        }
     }
     
     func setupPreview() {
@@ -343,7 +341,6 @@ extension ViewController: ESRCLicenseHandler, ESRCHandler {
     
     func onDetectedFace(face: ESRCFace) {
         print("onDetectedFace: " + face.toString())
-        
         
         // Whether face is detected or not
         if (face.getIsDetect()) {  // If face is detected
