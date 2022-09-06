@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		Xy5jSeqztr10ATYhNptSvKVqzE4=
+		</data>
 		<key>Headers/ESRC_Heart_SDK_iOS-Swift.h</key>
 		<data>
 		zyUS0yr+Qs24TxkBTuMaaRdvMp8=
@@ -26,11 +30,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		12WVdMLDNKAsV3ukb0P8tm+/U9U=
+		1LAWG5st6mFJqljpv+tuPlYFBAc=
 		</data>
 		<key>Modules/ESRC_Heart_SDK_iOS.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		Q4UpVO+B8fssuzuT4MhEtm8hmeM=
+		JWNvfS+fIrWIzsxTw34hKQ6gz0g=
 		</data>
 		<key>Modules/ESRC_Heart_SDK_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -98,7 +102,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			h8cJq/1Nz89qkaL7xv6s7qrkE1U30T3QMtBp9L8vnSI=
+			Q20G3vk8/80SErp9aPwtjq3JfbcMGjL8TCot14FSC1E=
 			</data>
 		</dict>
 		<key>Modules/ESRC_Heart_SDK_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
