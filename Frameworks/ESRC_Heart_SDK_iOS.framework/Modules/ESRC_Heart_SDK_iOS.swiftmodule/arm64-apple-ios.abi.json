@@ -13338,7 +13338,7 @@
       "kind": "StringLiteral",
       "offset": 394,
       "length": 24,
-      "value": "\"http:\/\/3.36.153.168:80\""
+      "value": "\"https:\/\/api.esrc.co.kr\""
     }
   ]
 }
