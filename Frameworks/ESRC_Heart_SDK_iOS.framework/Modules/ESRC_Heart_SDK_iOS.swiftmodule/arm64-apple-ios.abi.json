@@ -10322,6 +10322,949 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "ESRCMentalDisorder",
+        "printedName": "ESRCMentalDisorder",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC2idSivp",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC2idSivp",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC2idSivg",
+                "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC2idSivg",
+                "moduleName": "ESRC_Heart_SDK_iOS",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC2idSivs",
+                "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC2idSivs",
+                "moduleName": "ESRC_Heart_SDK_iOS",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC2idSivM",
+                "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC2idSivM",
+                "moduleName": "ESRC_Heart_SDK_iOS",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "anxiety",
+            "printedName": "anxiety",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC7anxietySfvp",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC7anxietySfvp",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC7anxietySfvg",
+                "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC7anxietySfvg",
+                "moduleName": "ESRC_Heart_SDK_iOS",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC7anxietySfvs",
+                "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC7anxietySfvs",
+                "moduleName": "ESRC_Heart_SDK_iOS",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC7anxietySfvM",
+                "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC7anxietySfvM",
+                "moduleName": "ESRC_Heart_SDK_iOS",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "depression",
+            "printedName": "depression",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC10depressionSfvp",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC10depressionSfvp",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC10depressionSfvg",
+                "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC10depressionSfvg",
+                "moduleName": "ESRC_Heart_SDK_iOS",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC10depressionSfvs",
+                "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC10depressionSfvs",
+                "moduleName": "ESRC_Heart_SDK_iOS",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC10depressionSfvM",
+                "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC10depressionSfvM",
+                "moduleName": "ESRC_Heart_SDK_iOS",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "insomnia",
+            "printedName": "insomnia",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC8insomniaSfvp",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC8insomniaSfvp",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC8insomniaSfvg",
+                "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC8insomniaSfvg",
+                "moduleName": "ESRC_Heart_SDK_iOS",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC8insomniaSfvs",
+                "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC8insomniaSfvs",
+                "moduleName": "ESRC_Heart_SDK_iOS",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC8insomniaSfvM",
+                "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC8insomniaSfvM",
+                "moduleName": "ESRC_Heart_SDK_iOS",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stress",
+            "printedName": "stress",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC6stressSfvp",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC6stressSfvp",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC6stressSfvg",
+                "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC6stressSfvg",
+                "moduleName": "ESRC_Heart_SDK_iOS",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC6stressSfvs",
+                "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC6stressSfvs",
+                "moduleName": "ESRC_Heart_SDK_iOS",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC6stressSfvM",
+                "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC6stressSfvM",
+                "moduleName": "ESRC_Heart_SDK_iOS",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ESRCMentalDisorder",
+                "printedName": "ESRC_Heart_SDK_iOS.ESRCMentalDisorder",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderCACycfc",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderCACycfc",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ESRCMentalDisorder",
+                "printedName": "ESRC_Heart_SDK_iOS.ESRCMentalDisorder",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC2idACSi_tcfc",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC2idACSi_tcfc",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(anxiety:depression:insomnia:stress:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ESRCMentalDisorder",
+                "printedName": "ESRC_Heart_SDK_iOS.ESRCMentalDisorder",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC7anxiety10depression8insomnia6stressACSf_S3ftcfc",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC7anxiety10depression8insomnia6stressACSf_S3ftcfc",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(id:anxiety:depression:insomnia:stress:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ESRCMentalDisorder",
+                "printedName": "ESRC_Heart_SDK_iOS.ESRCMentalDisorder",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC2id7anxiety10depression8insomnia6stressACSi_S4ftcfc",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC2id7anxiety10depression8insomnia6stressACSi_S4ftcfc",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(other:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ESRCMentalDisorder",
+                "printedName": "ESRC_Heart_SDK_iOS.ESRCMentalDisorder",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ESRCMentalDisorder",
+                "printedName": "ESRC_Heart_SDK_iOS.ESRCMentalDisorder",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC5otherA2C_tcfc",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC5otherA2C_tcfc",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getId",
+            "printedName": "getId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC5getIdSiyF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC5getIdSiyF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAnxiety",
+            "printedName": "getAnxiety()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC10getAnxietySfyF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC10getAnxietySfyF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDepression",
+            "printedName": "getDepression()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC13getDepressionSfyF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC13getDepressionSfyF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getInsomnia",
+            "printedName": "getInsomnia()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC11getInsomniaSfyF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC11getInsomniaSfyF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getStress",
+            "printedName": "getStress()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC9getStressSfyF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC9getStressSfyF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setId",
+            "printedName": "setId(id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC5setId2idySi_tF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC5setId2idySi_tF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAnxiety",
+            "printedName": "setAnxiety(anxiety:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC10setAnxiety7anxietyySf_tF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC10setAnxiety7anxietyySf_tF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDepression",
+            "printedName": "setDepression(depression:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC13setDepression10depressionySf_tF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC13setDepression10depressionySf_tF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setInsomnia",
+            "printedName": "setInsomnia(insomnia:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC11setInsomnia8insomniaySf_tF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC11setInsomnia8insomniaySf_tF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setStress",
+            "printedName": "setStress(stress:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC9setStress6stressySf_tF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC9setStress6stressySf_tF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMentalDisorder",
+            "printedName": "setMentalDisorder(other:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ESRCMentalDisorder",
+                "printedName": "ESRC_Heart_SDK_iOS.ESRCMentalDisorder",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC09setMentalF05otheryAC_tF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC09setMentalF05otheryAC_tF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toString",
+            "printedName": "toString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC8toStringSSyF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC8toStringSSyF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC",
+        "mangledName": "$s18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC",
+        "moduleName": "ESRC_Heart_SDK_iOS",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "ESRCProgressRatio",
         "printedName": "ESRCProgressRatio",
         "children": [
@@ -11258,6 +12201,95 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "enableMentalDisorder",
+            "printedName": "enableMentalDisorder",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ESRC_Heart_SDK_iOS12ESRCPropertyC20enableMentalDisorderSbvp",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS12ESRCPropertyC20enableMentalDisorderSbvp",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ESRC_Heart_SDK_iOS12ESRCPropertyC20enableMentalDisorderSbvg",
+                "mangledName": "$s18ESRC_Heart_SDK_iOS12ESRCPropertyC20enableMentalDisorderSbvg",
+                "moduleName": "ESRC_Heart_SDK_iOS",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ESRC_Heart_SDK_iOS12ESRCPropertyC20enableMentalDisorderSbvs",
+                "mangledName": "$s18ESRC_Heart_SDK_iOS12ESRCPropertyC20enableMentalDisorderSbvs",
+                "moduleName": "ESRC_Heart_SDK_iOS",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ESRC_Heart_SDK_iOS12ESRCPropertyC20enableMentalDisorderSbvM",
+                "mangledName": "$s18ESRC_Heart_SDK_iOS12ESRCPropertyC20enableMentalDisorderSbvM",
+                "moduleName": "ESRC_Heart_SDK_iOS",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -11282,7 +12314,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(enableMeasureEnv:enableFace:enableRemoteHR:enableHRV:enableEngagement:)",
+            "printedName": "init(enableMeasureEnv:enableFace:enableRemoteHR:enableHRV:enableEngagement:enableMentalDisorder:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -11319,11 +12351,17 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18ESRC_Heart_SDK_iOS12ESRCPropertyC16enableMeasureEnv0F4Face0F8RemoteHR0F3HRV0F10EngagementACSb_S4btcfc",
-            "mangledName": "$s18ESRC_Heart_SDK_iOS12ESRCPropertyC16enableMeasureEnv0F4Face0F8RemoteHR0F3HRV0F10EngagementACSb_S4btcfc",
+            "usr": "s:18ESRC_Heart_SDK_iOS12ESRCPropertyC16enableMeasureEnv0F4Face0F8RemoteHR0F3HRV0F10Engagement0F14MentalDisorderACSb_S5btcfc",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS12ESRCPropertyC16enableMeasureEnv0F4Face0F8RemoteHR0F3HRV0F10Engagement0F14MentalDisorderACSb_S5btcfc",
             "moduleName": "ESRC_Heart_SDK_iOS",
             "declAttributes": [
               "AccessControl",
@@ -11476,6 +12514,29 @@
           },
           {
             "kind": "Function",
+            "name": "getEnableMentalDisorder",
+            "printedName": "getEnableMentalDisorder()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS12ESRCPropertyC23getEnableMentalDisorderSbyF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS12ESRCPropertyC23getEnableMentalDisorderSbyF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setEnableMeasureEnv",
             "printedName": "setEnableMeasureEnv(enableMeasureEnv:)",
             "children": [
@@ -11606,6 +12667,34 @@
             "declKind": "Func",
             "usr": "s:18ESRC_Heart_SDK_iOS12ESRCPropertyC19setEnableEngagement06enableH0ySb_tF",
             "mangledName": "$s18ESRC_Heart_SDK_iOS12ESRCPropertyC19setEnableEngagement06enableH0ySb_tF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setEnableMentalDisorder",
+            "printedName": "setEnableMentalDisorder(enableMentalDisorder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS12ESRCPropertyC23setEnableMentalDisorder06enablehI0ySb_tF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS12ESRCPropertyC23setEnableMentalDisorder06enablehI0ySb_tF",
             "moduleName": "ESRC_Heart_SDK_iOS",
             "isOpen": true,
             "declAttributes": [
@@ -11917,6 +13006,273 @@
           "RawDocComment"
         ],
         "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ESRC_Heart_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MentalDisorderRecognizer",
+        "printedName": "MentalDisorderRecognizer",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MentalDisorderRecognizer",
+                "printedName": "ESRC_Heart_SDK_iOS.MentalDisorderRecognizer",
+                "usr": "s:18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerCACycfc",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerCACycfc",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MentalDisorderRecognizer",
+                "printedName": "ESRC_Heart_SDK_iOS.MentalDisorderRecognizer",
+                "usr": "s:18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MentalDisorderHandler",
+                "printedName": "ESRC_Heart_SDK_iOS.MentalDisorderHandler",
+                "usr": "s:18ESRC_Heart_SDK_iOS21MentalDisorderHandlerP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerC7handlerAcA0eF7Handler_p_tcfc",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerC7handlerAcA0eF7Handler_p_tcfc",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(enableMentalDisorder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerC10initialize06enableeF0S2b_tF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerC10initialize06enableeF0S2b_tF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "release",
+            "printedName": "release()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerC7releaseSbyF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerC7releaseSbyF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "feed",
+            "printedName": "feed(hrv:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ESRCHRV",
+                "printedName": "ESRC_Heart_SDK_iOS.ESRCHRV",
+                "usr": "s:18ESRC_Heart_SDK_iOS7ESRCHRVC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerC4feed3hrvyAA7ESRCHRVC_tF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerC4feed3hrvyAA7ESRCHRVC_tF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadModel",
+            "printedName": "loadModel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerC9loadModelSbyF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerC9loadModelSbyF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getHandler",
+            "printedName": "getHandler()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MentalDisorderHandler",
+                "printedName": "ESRC_Heart_SDK_iOS.MentalDisorderHandler",
+                "usr": "s:18ESRC_Heart_SDK_iOS21MentalDisorderHandlerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerC10getHandlerAA0efI0_pyF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerC10getHandlerAA0efI0_pyF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setHandler",
+            "printedName": "setHandler(handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MentalDisorderHandler",
+                "printedName": "ESRC_Heart_SDK_iOS.MentalDisorderHandler",
+                "usr": "s:18ESRC_Heart_SDK_iOS21MentalDisorderHandlerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerC10setHandler7handleryAA0efI0_p_tF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerC10setHandler7handleryAA0efI0_p_tF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerC",
+        "mangledName": "$s18ESRC_Heart_SDK_iOS24MentalDisorderRecognizerC",
+        "moduleName": "ESRC_Heart_SDK_iOS",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MentalDisorderHandler",
+        "printedName": "MentalDisorderHandler",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onRecognizedMentalDisorder",
+            "printedName": "onRecognizedMentalDisorder(mentalDisorder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ESRCMentalDisorder",
+                "printedName": "ESRC_Heart_SDK_iOS.ESRCMentalDisorder",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS21MentalDisorderHandlerP012onRecognizedeF006mentalF0yAA010ESRCMentalF0C_tF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS21MentalDisorderHandlerP012onRecognizedeF006mentalF0yAA010ESRCMentalF0C_tF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : ESRC_Heart_SDK_iOS.MentalDisorderHandler>",
+            "sugared_genericSig": "<Self where Self : ESRC_Heart_SDK_iOS.MentalDisorderHandler>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:18ESRC_Heart_SDK_iOS21MentalDisorderHandlerP",
+        "mangledName": "$s18ESRC_Heart_SDK_iOS21MentalDisorderHandlerP",
+        "moduleName": "ESRC_Heart_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -12439,6 +13795,33 @@
           },
           {
             "kind": "Function",
+            "name": "recognizeMentalDisorder",
+            "printedName": "recognizeMentalDisorder(hrv:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ESRCHRV",
+                "printedName": "ESRC_Heart_SDK_iOS.ESRCHRV",
+                "usr": "s:18ESRC_Heart_SDK_iOS7ESRCHRVC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS0A0C23recognizeMentalDisorder3hrvyAA7ESRCHRVC_tF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS0A0C23recognizeMentalDisorder3hrvyAA7ESRCHRVC_tF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "onAnalyzedMeasureEnv",
             "printedName": "onAnalyzedMeasureEnv(measureEnv:)",
             "children": [
@@ -12638,6 +14021,34 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onRecognizedMentalDisorder",
+            "printedName": "onRecognizedMentalDisorder(mentalDisorder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ESRCMentalDisorder",
+                "printedName": "ESRC_Heart_SDK_iOS.ESRCMentalDisorder",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS0A0C26onRecognizedMentalDisorder06mentalH0yAA010ESRCMentalH0C_tF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS0A0C26onRecognizedMentalDisorder06mentalH0yAA010ESRCMentalH0C_tF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -12678,6 +14089,13 @@
             "printedName": "EngagementHandler",
             "usr": "s:18ESRC_Heart_SDK_iOS17EngagementHandlerP",
             "mangledName": "$s18ESRC_Heart_SDK_iOS17EngagementHandlerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MentalDisorderHandler",
+            "printedName": "MentalDisorderHandler",
+            "usr": "s:18ESRC_Heart_SDK_iOS21MentalDisorderHandlerP",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS21MentalDisorderHandlerP"
           }
         ]
       },
@@ -12886,6 +14304,36 @@
             "declKind": "Func",
             "usr": "s:18ESRC_Heart_SDK_iOS11ESRCHandlerP22onRecognizedEngagement10engagementyAA14ESRCEngagementC_tF",
             "mangledName": "$s18ESRC_Heart_SDK_iOS11ESRCHandlerP22onRecognizedEngagement10engagementyAA14ESRCEngagementC_tF",
+            "moduleName": "ESRC_Heart_SDK_iOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : ESRC_Heart_SDK_iOS.ESRCHandler>",
+            "sugared_genericSig": "<Self where Self : ESRC_Heart_SDK_iOS.ESRCHandler>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onRecognizedMentalDisorder",
+            "printedName": "onRecognizedMentalDisorder(mentalDisorder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ESRCMentalDisorder",
+                "printedName": "ESRC_Heart_SDK_iOS.ESRCMentalDisorder",
+                "usr": "s:18ESRC_Heart_SDK_iOS18ESRCMentalDisorderC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ESRC_Heart_SDK_iOS11ESRCHandlerP26onRecognizedMentalDisorder06mentalI0yAA010ESRCMentalI0C_tF",
+            "mangledName": "$s18ESRC_Heart_SDK_iOS11ESRCHandlerP26onRecognizedMentalDisorder06mentalI0yAA010ESRCMentalI0C_tF",
             "moduleName": "ESRC_Heart_SDK_iOS",
             "genericSig": "<τ_0_0 where τ_0_0 : ESRC_Heart_SDK_iOS.ESRCHandler>",
             "sugared_genericSig": "<Self where Self : ESRC_Heart_SDK_iOS.ESRCHandler>",
@@ -13133,7 +14581,7 @@
     {
       "filePath": "\/Users\/hyunw\/Workspace\/ESRC-Heart-SDK-iOS-Project\/ESRC-Heart-SDK-iOS\/core\/FaceDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 400,
+      "offset": 402,
       "length": 5,
       "value": "false"
     },
@@ -13210,28 +14658,28 @@
     {
       "filePath": "\/Users\/hyunw\/Workspace\/ESRC-Heart-SDK-iOS-Project\/ESRC-Heart-SDK-iOS\/core\/EngagementRecognizer.swift",
       "kind": "BooleanLiteral",
-      "offset": 444,
+      "offset": 446,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hyunw\/Workspace\/ESRC-Heart-SDK-iOS-Project\/ESRC-Heart-SDK-iOS\/core\/MeasureEnvAnalyzer.swift",
       "kind": "BooleanLiteral",
-      "offset": 465,
+      "offset": 464,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hyunw\/Workspace\/ESRC-Heart-SDK-iOS-Project\/ESRC-Heart-SDK-iOS\/core\/RemoteHREstimator.swift",
       "kind": "BooleanLiteral",
-      "offset": 434,
+      "offset": 436,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hyunw\/Workspace\/ESRC-Heart-SDK-iOS-Project\/ESRC-Heart-SDK-iOS\/core\/RemoteHREstimator.swift",
       "kind": "BooleanLiteral",
-      "offset": 523,
+      "offset": 525,
       "length": 5,
       "value": "false"
     },
@@ -13339,6 +14787,13 @@
       "offset": 394,
       "length": 24,
       "value": "\"https:\/\/api.esrc.co.kr\""
+    },
+    {
+      "filePath": "\/Users\/hyunw\/Workspace\/ESRC-Heart-SDK-iOS-Project\/ESRC-Heart-SDK-iOS\/core\/MentalDisorderRecognizer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 475,
+      "length": 5,
+      "value": "false"
     }
   ]
 }

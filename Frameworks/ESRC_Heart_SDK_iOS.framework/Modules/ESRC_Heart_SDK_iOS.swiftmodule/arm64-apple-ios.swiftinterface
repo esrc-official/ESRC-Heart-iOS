@@ -221,6 +221,26 @@ public class ESRCEngagement {
   public func toString() -> Swift.String
   @objc deinit
 }
+public class ESRCMentalDisorder {
+  public init()
+  public init(id: Swift.Int)
+  public init(anxiety: Swift.Float, depression: Swift.Float, insomnia: Swift.Float, stress: Swift.Float)
+  public init(id: Swift.Int, anxiety: Swift.Float, depression: Swift.Float, insomnia: Swift.Float, stress: Swift.Float)
+  public init(other: ESRC_Heart_SDK_iOS.ESRCMentalDisorder)
+  public func getId() -> Swift.Int
+  public func getAnxiety() -> Swift.Float
+  public func getDepression() -> Swift.Float
+  public func getInsomnia() -> Swift.Float
+  public func getStress() -> Swift.Float
+  public func setId(id: Swift.Int)
+  public func setAnxiety(anxiety: Swift.Float)
+  public func setDepression(depression: Swift.Float)
+  public func setInsomnia(insomnia: Swift.Float)
+  public func setStress(stress: Swift.Float)
+  public func setMentalDisorder(other: ESRC_Heart_SDK_iOS.ESRCMentalDisorder)
+  public func toString() -> Swift.String
+  @objc deinit
+}
 public class ESRCProgressRatio {
   public init()
   public init(id: Swift.Int)
@@ -237,24 +257,29 @@ public class ESRCProgressRatio {
 }
 open class ESRCProperty {
   public init()
-  public init(enableMeasureEnv: Swift.Bool, enableFace: Swift.Bool, enableRemoteHR: Swift.Bool, enableHRV: Swift.Bool, enableEngagement: Swift.Bool)
+  public init(enableMeasureEnv: Swift.Bool, enableFace: Swift.Bool, enableRemoteHR: Swift.Bool, enableHRV: Swift.Bool, enableEngagement: Swift.Bool, enableMentalDisorder: Swift.Bool)
   public init(other: ESRC_Heart_SDK_iOS.ESRCProperty)
   public func getEnableMeasureEnv() -> Swift.Bool
   public func getEnableFace() -> Swift.Bool
   public func getEnableRemoteHR() -> Swift.Bool
   public func getEnableHRV() -> Swift.Bool
   public func getEnableEngagement() -> Swift.Bool
+  public func getEnableMentalDisorder() -> Swift.Bool
   public func setEnableMeasureEnv(enableMeasureEnv: Swift.Bool)
   public func setEnableFace(enableFace: Swift.Bool)
   public func setEnableRemoteHR(enableRemoteHR: Swift.Bool)
   public func setEnableHRV(enableHRV: Swift.Bool)
   public func setEnableEngagement(enableEngagement: Swift.Bool)
+  public func setEnableMentalDisorder(enableMentalDisorder: Swift.Bool)
   open func toString() -> Swift.String
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class APIClient {
   public static func getInstance() -> ESRC_Heart_SDK_iOS.APIClient
   public static func validateLicense(appId: Swift.String, completionHandler: @escaping (Swift.Bool, Any) -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class MentalDisorderRecognizer {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ESRC {
@@ -278,6 +303,7 @@ public protocol ESRCHandler {
   func didChangedProgressRatioOnHRV(progressRatio: ESRC_Heart_SDK_iOS.ESRCProgressRatio)
   func onAnalyzedHRV(hrv: ESRC_Heart_SDK_iOS.ESRCHRV)
   func onRecognizedEngagement(engagement: ESRC_Heart_SDK_iOS.ESRCEngagement)
+  func onRecognizedMentalDisorder(mentalDisorder: ESRC_Heart_SDK_iOS.ESRCMentalDisorder)
 }
 @_hasMissingDesignatedInitializers public class DeviceInfo {
   public static func getDeviceId() -> Swift.String?

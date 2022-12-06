@@ -12,7 +12,7 @@
 
 ## Installation
 
-To use our iOS samples, you should first install [ESRC Heart SDK for iOS](https://github.com/esrc-official/ESRC-Heart-SDK-iOS) 2.6.0 or higher on your system and should be received License Key by requesting by our email: **esrc@esrc.co.kr** <br /> 
+To use our iOS samples, you should first install [ESRC Heart SDK for iOS](https://github.com/esrc-official/ESRC-Heart-SDK-iOS) 2.6.1 or higher on your system and should be received License Key by requesting by our email: **esrc@esrc.co.kr** <br /> 
 
 ## Before getting started
 
@@ -58,7 +58,8 @@ ESRC.start(
         enableFace: true,  // Whether detect face or not.
         enableRemoteHR: true,  // Whether estimate remote hr or not. If enableFace is false, it is also automatically set to false.
         enableHRV: true,  // Whether analyze HRV or not. If enableFace or enableRemoteHR is false, it is also automatically set to false.
-        enableEngagement: true),  // Whether recognize engagement or not. If enableFace or enableRemoteHR is false, it is also automatically set to false.
+        enableEngagement: true,  // Whether recognize engagement or not. If enableFace or enableRemoteHR is false, it is also automatically set to false.
+        enableMentalDisorder: true)  // Whether recognize mental disorder or not. It enableHRV is false, it is also automatically set to false.
     handler: ESRCHandler() {
         func onDetectedFace(face: ESRCFace) {
             // The face is detected.
@@ -75,6 +76,7 @@ ESRC.start(
         func didChangedProgressRatioOnHRV(progressRatio: Double) { … }
         func onAnalyzedHRV(hrv: ESRCHRV) { … }
         func onRecognizedEngagement(engagement: ESRCEngagement) { … }
+        func onRecognizedMentalDisorder(mentalDisorder: ESRCMentalDisorder) { … }
 });
 ```
 

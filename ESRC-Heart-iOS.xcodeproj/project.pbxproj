@@ -17,6 +17,10 @@
 		4CD12CD3272696DF006AEBEE /* esrc_ssd_mobilenet_face_detection.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = 4CD12CCF272696DF006AEBEE /* esrc_ssd_mobilenet_face_detection.prototxt */; };
 		4CD12CD4272696E0006AEBEE /* esrc_ssd_mobilenet_face_detection.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 4CD12CD0272696DF006AEBEE /* esrc_ssd_mobilenet_face_detection.caffemodel */; };
 		4CD12CE52726A2F8006AEBEE /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD12CE42726A2F8006AEBEE /* CircularProgressBarView.swift */; };
+		B30C4A212939D4D30072E2CE /* esrc_mobilenet_mental_disorder_depress.tflite in Resources */ = {isa = PBXBuildFile; fileRef = B30C4A1D2939D4D30072E2CE /* esrc_mobilenet_mental_disorder_depress.tflite */; };
+		B30C4A222939D4D30072E2CE /* esrc_mobilenet_mental_disorder_stress.tflite in Resources */ = {isa = PBXBuildFile; fileRef = B30C4A1E2939D4D30072E2CE /* esrc_mobilenet_mental_disorder_stress.tflite */; };
+		B30C4A232939D4D30072E2CE /* esrc_mobilenet_mental_disorder_anxiety.tflite in Resources */ = {isa = PBXBuildFile; fileRef = B30C4A1F2939D4D30072E2CE /* esrc_mobilenet_mental_disorder_anxiety.tflite */; };
+		B30C4A242939D4D30072E2CE /* esrc_mobilenet_mental_disorder_insomnia.tflite in Resources */ = {isa = PBXBuildFile; fileRef = B30C4A202939D4D30072E2CE /* esrc_mobilenet_mental_disorder_insomnia.tflite */; };
 		B30DD0D4274275C300CF3215 /* ESRC_Heart_SDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30DD0D2274275B900CF3215 /* ESRC_Heart_SDK_iOS.framework */; platformFilter = ios; };
 		B30DD0D5274275C300CF3215 /* ESRC_Heart_SDK_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B30DD0D2274275B900CF3215 /* ESRC_Heart_SDK_iOS.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -48,6 +52,10 @@
 		4CD12CCF272696DF006AEBEE /* esrc_ssd_mobilenet_face_detection.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = esrc_ssd_mobilenet_face_detection.prototxt; sourceTree = "<group>"; };
 		4CD12CD0272696DF006AEBEE /* esrc_ssd_mobilenet_face_detection.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = esrc_ssd_mobilenet_face_detection.caffemodel; sourceTree = "<group>"; };
 		4CD12CE42726A2F8006AEBEE /* CircularProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
+		B30C4A1D2939D4D30072E2CE /* esrc_mobilenet_mental_disorder_depress.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = esrc_mobilenet_mental_disorder_depress.tflite; sourceTree = "<group>"; };
+		B30C4A1E2939D4D30072E2CE /* esrc_mobilenet_mental_disorder_stress.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = esrc_mobilenet_mental_disorder_stress.tflite; sourceTree = "<group>"; };
+		B30C4A1F2939D4D30072E2CE /* esrc_mobilenet_mental_disorder_anxiety.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = esrc_mobilenet_mental_disorder_anxiety.tflite; sourceTree = "<group>"; };
+		B30C4A202939D4D30072E2CE /* esrc_mobilenet_mental_disorder_insomnia.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = esrc_mobilenet_mental_disorder_insomnia.tflite; sourceTree = "<group>"; };
 		B30DD0D2274275B900CF3215 /* ESRC_Heart_SDK_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ESRC_Heart_SDK_iOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +116,10 @@
 		4CD12CCC272696DF006AEBEE /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				B30C4A1F2939D4D30072E2CE /* esrc_mobilenet_mental_disorder_anxiety.tflite */,
+				B30C4A1D2939D4D30072E2CE /* esrc_mobilenet_mental_disorder_depress.tflite */,
+				B30C4A202939D4D30072E2CE /* esrc_mobilenet_mental_disorder_insomnia.tflite */,
+				B30C4A1E2939D4D30072E2CE /* esrc_mobilenet_mental_disorder_stress.tflite */,
 				4CD12CCF272696DF006AEBEE /* esrc_ssd_mobilenet_face_detection.prototxt */,
 				4CD12CD0272696DF006AEBEE /* esrc_ssd_mobilenet_face_detection.caffemodel */,
 			);
@@ -175,7 +187,11 @@
 				4CD12CD4272696E0006AEBEE /* esrc_ssd_mobilenet_face_detection.caffemodel in Resources */,
 				4CD12CB1272694D3006AEBEE /* LaunchScreen.storyboard in Resources */,
 				4C86BDFE272BA7ED000BC2C5 /* Main.storyboard in Resources */,
+				B30C4A232939D4D30072E2CE /* esrc_mobilenet_mental_disorder_anxiety.tflite in Resources */,
+				B30C4A222939D4D30072E2CE /* esrc_mobilenet_mental_disorder_stress.tflite in Resources */,
+				B30C4A242939D4D30072E2CE /* esrc_mobilenet_mental_disorder_insomnia.tflite in Resources */,
 				4CD12CD3272696DF006AEBEE /* esrc_ssd_mobilenet_face_detection.prototxt in Resources */,
+				B30C4A212939D4D30072E2CE /* esrc_mobilenet_mental_disorder_depress.tflite in Resources */,
 				4C86BE00272BA814000BC2C5 /* Assets.xcassets in Resources */,
 				4CD12CBD27269546006AEBEE /* README.md in Resources */,
 			);
@@ -341,7 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 260;
+				CURRENT_PROJECT_VERSION = 261;
 				DEVELOPMENT_TEAM = MHUU2ZBJ99;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -353,7 +369,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.6.0;
+				MARKETING_VERSION = 2.6.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.esrc.heart.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -367,7 +383,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 260;
+				CURRENT_PROJECT_VERSION = 261;
 				DEVELOPMENT_TEAM = MHUU2ZBJ99;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -379,7 +395,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.6.0;
+				MARKETING_VERSION = 2.6.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.esrc.heart.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

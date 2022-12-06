@@ -13,14 +13,15 @@ import ESRC_Heart_SDK_iOS
 class ViewController:  UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
 
     // ESRC variables
-    let APP_ID: String = ""  // Application ID.
+    let APP_ID: String = "99999999-9999-9999-9999-999999999999"  // Application ID.
     let ENABLE_DRAW: Bool = false;  // Whether visualize result or not.
     var property: ESRCProperty = ESRCProperty(
         enableMeasureEnv: true,  // Whether analyze measurement environment or not.
         enableFace: true,  // Whether detect face or not.
         enableRemoteHR: true,  // Whether estimate remote hr or not. If enableFace is false, it is also automatically set to false.
         enableHRV: true,  // Whether analyze HRV not not. If enableFace or enableRemoteHR is false, it is also automatically set to false.
-        enableEngagement: true)  // Whether recognize engagement or not. If enableRemoteHR and enableHRV are false, it is also automatically set to false.
+        enableEngagement: true,  // Whether recognize engagement or not. If enableHRV is false, it is also automatically set to false.
+        enableMentalDisorder: true)  // Whether recognize mental disorder or not. It enableHRV is false, it is also automatically set to false.
         
     var frame: UIImage? = nil
     var face: ESRCFace? = nil
@@ -447,5 +448,9 @@ extension ViewController: ESRCLicenseHandler, ESRCHandler {
     
     func onRecognizedEngagement(engagement: ESRCEngagement) {
         print("onRecognizedEngagement: " + engagement.toString())
+    }
+    
+    func onRecognizedMentalDisorder(mentalDisorder: ESRCMentalDisorder) {
+        print("onRecognizedMentalDisorder: " + mentalDisorder.toString())
     }
 }

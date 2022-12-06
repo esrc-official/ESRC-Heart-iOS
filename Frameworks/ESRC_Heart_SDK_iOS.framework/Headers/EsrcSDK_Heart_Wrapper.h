@@ -82,6 +82,34 @@
  */
 + (void) EsrcSDK_Heart_FeedEngagementRecognitionFrequencyDomainTask: (double *) hrv param2: (int *) score param3: (double *) probs param4: (int *) emotion;
 
+/**
+ * Initializes mental disorder recognition task.
+ * @param anxietyModelPath Path of TfLite for anxiety recognition.
+ * @param depressModelPath Path of TfLite for depression recognition.
+ * @param insomniaModelPath Path of TfLite for insomnia recognition.
+ * @param stressModelPath Path of TfLite for stress recognition.
+ * @return Returns true if the initialization succeeded. Otherwise, false.
+ */
++ (bool) EsrcSDK_Heart_InitMentalDisorderRecognitionTask: (NSString *) anxietyModelPath param2: (NSString *) depressModelPath param3: (NSString *) insomniaModelPath param4: (NSString *) stressModelPath;
+
+/**
+ * Releases mental disorder recognition task.
+ *
+ * @return Returns true if the release succeeded. Otherwise, false.
+ */
++ (bool) EsrcSDK_Heart_ReleaseMentalDisorderRecognitionTask;
+
+/**
+ * Recognizes mental disorder from HRV.
+ *
+ * @param hrv HRV.
+ * @param anxiety Score of anxiety.
+ * @param depression Score of depression.
+ * @param insomnia Score of insomnia.
+ * @param stress Score of stress.
+ */
++ (void) EsrcSDK_Heart_FeedMentalDisorderRecognitionTask: (double *) hrv param2: (float *) anxiety param3: (float *) depression param4: (float *) insomnia param5: (float *) stress;
+
 @end
 
 #endif /* EsrcSDK_Heart_Wrapper_h */
